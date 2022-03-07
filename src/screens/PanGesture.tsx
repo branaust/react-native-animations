@@ -27,7 +27,7 @@ const PanGesture = () => {
     offsetY: number;
   };
 
-  const onGestureEvent = useAnimatedGestureHandler<
+  const gestureHandler = useAnimatedGestureHandler<
     PanGestureHandlerGestureEvent,
     AnimatedGHContext
   >({
@@ -68,7 +68,7 @@ const PanGesture = () => {
 
   return (
     <Container>
-      <PanGestureHandler {...{ onGestureEvent }}>
+      <PanGestureHandler onGestureEvent={gestureHandler}>
         <Animated.View {...{ style }}>
           <Card card={Cards.Card1} />
         </Animated.View>
