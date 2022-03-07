@@ -41,7 +41,7 @@ const Home: FC = () => {
     <FlatList
       data={ListOptions}
       renderItem={ListItem}
-      keyExtractor={(item, index) => `key-${index}`}
+      keyExtractor={(_, index) => `key-${index}`}
     />
   );
 };
