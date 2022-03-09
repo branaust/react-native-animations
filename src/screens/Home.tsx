@@ -5,15 +5,7 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/native";
 import { RootStackParams } from "../Navigation";
 
-const ListOptions = [
-  "PanGesture",
-  "TESTING1",
-  "TESTING2",
-  "TESTING3",
-  "Testing4",
-  "Ay",
-  "Yeas",
-];
+const ListOptions = ["PanGesture", "Transitions"];
 
 interface ListItemProps {
   item: string;
