@@ -69,7 +69,7 @@ const PanGesture = () => {
   return (
     <Container>
       <PanGestureHandler onGestureEvent={gestureHandler}>
-        <Animated.View {...{ style }}>
+        <Animated.View style={style}>
           <Card card={Cards.Card1} />
         </Animated.View>
       </PanGestureHandler>
