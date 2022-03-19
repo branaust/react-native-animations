@@ -9,7 +9,6 @@ import {
   useDerivedValue,
   useSharedValue,
   withSpring,
-  withTiming,
 } from "react-native-reanimated";
 
 const Transitions = () => {
